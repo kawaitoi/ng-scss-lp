@@ -1,11 +1,14 @@
 .header{
+  background-color: rgb(32, 160, 219);
   &__wrap{
   display: flex;
   justify-content: space-between;
-  background-color: rgb(32, 160, 219);
   color: white;
   align-items: center;
   padding: 20px;
+}
+@media screen and (max-width: 470px) {
+  flex-wrap: wrap;
 }
 }
 
