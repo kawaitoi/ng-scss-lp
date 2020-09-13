@@ -1,0 +1,17 @@
+.search{
+  position: relative;
+  background:white;
+  align-items: center;
+  padding: 0 5px;
+  border-radius: 16px;
+  position: relative;
+  &__input{
+    background: none;
+    border: none;
+    line-height: 32px;
+  }
+  &__button{
+    background: none;
+    border: none;
+  }
+}
