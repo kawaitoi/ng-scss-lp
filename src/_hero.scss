@@ -1,0 +1,25 @@
+.hero{
+
+  &__wrap{
+    display: flex;
+    align-items: center;
+  }
+&__title{
+  font-weight: bold;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+&__description{
+  margin-bottom: 24px;
+}
+&__image{
+  margin: 10px;
+}
+&__actions{
+button + button{
+  margin-left: 16px;
+}
+}
+
+}
+

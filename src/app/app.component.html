@@ -2,6 +2,8 @@
 
 
 <div class="header">
+  <div class="container">
+    <div class="header__wrap">
   <h1 class="header__logo">MARKBOT</h1>
   <div class="search">
     <button class="search__button"><i class="fas fa-search"></i>
@@ -14,7 +16,70 @@
     <li class="nav__item"><a href="">Education</a></li>
     <li class="nav__item"><a href="">contact</a></li>
   </ul>
+    </div>
+</div>
+</div>
 
+<div class="hero">
+
+  <div class="container">
+    <div class="hero__wrap">
+
+  <figure class="hero__image">
+
+<img  class="hero__img" src="/assets/IMG_7599.jpg" alt="">
+  </figure>
+  <div class="hero__body">
+    <h2 class="hero__title">自己紹介</h2>
+    <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing <br>
+      elit. Iusto unde, aut ipsum cumque deleniti rem praesentium aperiam veniam, a suscipit dicta<br>
+      repellat vero minima ipsa, esse consequatur ex quidem aspernatur.</p>
+      <div class="hero__actions">
+      </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+
+<div class="filter-bar">
+<div class="filter" [class.filter--active]="filterStatus">
+  <button class="filter__button" (click)="filterStatus = !filterStatus">button name</button>
+  <div class="filter__dropdown">
+    <ul>
+      <li>aaa</li>
+      <li>aaa</li>
+      <li>aaa</li>
+      <li>aaa</li>
+    </ul>
+  </div>
+</div>
+
+<div class="filter">
+  <button class="filter__button">button name</button>
+  <div class="filter__dropdown">
+    <ul>
+      <li>aaa</li>
+      <li>aaa</li>
+      <li>aaa</li>
+      <li>aaa</li>
+    </ul>
+  </div>
+</div>
+
+<div class="filter">
+  <button class="filter__button">button name</button>
+  <div class="filter__dropdown">
+    <ul>
+      <li>aaa</li>
+      <li>aaa</li>
+      <li>aaa</li>
+      <li>aaa</li>
+    </ul>
+  </div>
+</div>
+</div>
 </div>
 
 <router-outlet></router-outlet>
