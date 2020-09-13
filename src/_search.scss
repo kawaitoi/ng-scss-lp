@@ -5,13 +5,24 @@
   padding: 0 5px;
   border-radius: 16px;
   position: relative;
+
+
   &__input{
     background: none;
     border: none;
     line-height: 32px;
+    @media screen and (max-width: 470px) {
+    width: 50%;
+    }
   }
   &__button{
     background: none;
     border: none;
   }
+  @media screen and (max-width: 470px) {
+    display: flex ;
+    margin: 0 0 0 10px;
+
+  }
+
 }
