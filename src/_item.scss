@@ -1,0 +1,70 @@
+.card{
+  border-radius: 4px;//角丸にする
+  box-shadow: 0 0 3px #333;//影をつける
+  &__cover{
+    padding-bottom: 52.5%;//カードの縮小拡大（縦幅・横幅）
+    background: #000;
+    width: 100%;
+    display: block;
+    background: #000 center/cover;//真ん中によって、塗りつぶす
+    background-image: url("./assets/tetro.png");
+
+  }
+  &__cover-second{
+    padding-bottom: 52.5%;//カードの縮小拡大（縦幅・横幅）
+    background: #000;
+    width: 100%;
+    display: block;
+    background: #000 center/cover;//真ん中によ
+    background-image: url("./assets/qizu.png");
+  }
+  &__cover-third{
+    padding-bottom: 52.5%;//カードの縮小拡大（縦幅・横幅）
+    background: #000;
+    width: 100%;
+    display: block;
+    background: #000 center/cover;//真ん中によ
+    background-image: url("./assets/pl.png");
+  }
+  &__body{
+    padding: 16px;
+    display: flex;
+    align-items: center;//画像とテキストを垂直
+  }
+  &__avatar{
+    padding: 10px;
+  }
+
+ &__title{
+   margin-bottom: 4px;
+ }
+  &__date{
+    color: rgba(black,.40);//文字が薄くなる
+
+  }
+  &__date a{
+text-decoration: none;
+
+
+  }
+  &__content{
+flex: 1;
+  }
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);//3当分
+  gap: 16px;//gapでgridに余白
+  padding: 16px;
+
+
+  @media screen and (max-width: 768px){
+    grid-template-columns: 1fr;
+  }
+}
+
+.filter-li{
+  margin-bottom: 5px;
+}
+
